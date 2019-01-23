@@ -1,5 +1,5 @@
 language: cpp
 
 script:
-  - if [ "${BRANCH}" = "master" ]; then exit 1; fi
- 
+  - echo ${BRANCH}
+  - if [ "${BRANCH}" = "master" ]; then echo "failing"; exit 1; fi
