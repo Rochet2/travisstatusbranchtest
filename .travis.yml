@@ -1,0 +1,5 @@
+language: cpp
+
+script:
+  - if [ "${BRANCH}" = "master" ]; then exit 1; fi
+ 
